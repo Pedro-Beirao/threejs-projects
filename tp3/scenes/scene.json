@@ -1,0 +1,71 @@
+{
+    "yasf": {
+        "globals": {
+            "background": {
+                "r": 141,
+                "g": 215,
+                "b": 252,
+                "a": 1
+            },
+            "ambient": {
+                "r": 250,
+                "g": 250,
+                "b": 250,
+                "a": 1
+            }
+        },
+        "fog": {
+            "color": {
+                "r": 0.5529411765,
+                "g": 0.8431372549,
+                "b": 0.9882352941,
+                "a": 1
+            },
+            "near": 10,
+            "far": 100
+        },
+        "graph": {
+            "rootid": "scene",
+            "scene": {
+                "type": "node",
+                "children": {
+                    "track": {
+                        "type": "obj",
+                        "transforms": [
+                            {
+                                "type": "rotate",
+                                "amount": {
+                                    "x": 0,
+                                    "y": -26,
+                                    "z": 0
+                                }
+                            }
+                        ],
+                        "castshadow": true,
+                        "receiveshadow": true,
+                        "obj": "track/track"
+                    },
+                    "ceilingLight": {
+                        "type": "directionallight",
+                        "enabled": true,
+                        "color": {
+                            "r": 1.0,
+                            "g": 0.9804,
+                            "b": 0.8039,
+                            "a": 1.0
+                        },
+                        "intensity": 1.5,
+                        "distance": 30,
+                        "decay": 0.0,
+                        "castshadow": true,
+                        "position": {
+                            "x": 0,
+                            "y": 100,
+                            "z": 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

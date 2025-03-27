@@ -1,0 +1,108 @@
+
+
+body { 
+    margin: 0; 
+}
+
+#canvas { 
+    width: 100%; 
+    height: 100% 
+}
+
+#camera { 
+    position: absolute; 
+    left: 100px; 
+    top: 20px; 
+    width: 100px; 
+    height: 100px; 
+    color: lightgreen; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; 
+    z-index: 1000; 
+}
+
+#delete-me { 
+    position: absolute; 
+    left: 100px; 
+    top: 200px; 
+    width: 1000px; 
+    height: 100px; 
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; 
+    z-index: 1000; 
+}
+
+#gui 
+{
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    font-size: xxx-large;
+    width: 100%;
+}
+
+#menu
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em
+}
+
+#authors
+{
+    position: absolute;
+    bottom: 1em;
+    left: 1em
+}
+
+#sgifeup
+{
+    position: absolute;
+    bottom: 1em;
+    right: 1em
+}
+
+form
+{
+    position: absolute;
+    align-content: left;
+    left: 55%;
+    top: 40%;
+}
+
+#pname
+{
+    height: 3em;
+    width: 25em;
+}
+
+#oname
+{
+    height: 3em;
+    width: 25em;
+}
+
+#startbutton
+{
+    height: 2em;
+    width: 5em;
+}
+
+#choices
+{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 4em;
+    z-index: 1000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center
+}

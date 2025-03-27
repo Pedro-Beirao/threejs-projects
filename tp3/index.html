@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SGI Hello world TP1</title>
+
+    <link rel="shortcut icon" href="image/favicon/3d.png" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="choices">
+    Select using 'a' and 'd'
+    <br>
+    Confirm using 'space'
+  </div>
+  
+    <div id="menu">
+      <form id="form">
+        <label for="fname">Player's name:</label><br>
+        <input type="text" id="pname" name="pname"><br>
+        <br>
+        <label for="lname">Opponent's name:</label><br>
+        <input type="text" id="oname" name="oname"><br>
+        <br>
+        <input type="submit" id="startbutton" value="Start">
+      </form>
+      <div id="authors">By: Catarina Canelas e Pedro Beirão</div>
+      <div id="sgifeup">SGI - FEUP</div>
+    </div>
+
+    <div id="gui">
+      <div style="width: 50%; display: table; align-content: center; margin-left: 25%; margin-right: 50%;">
+        <div style="display: table-row;">
+          <div style="display: table-cell; width: 1em; height: 2em;"><div id="uarr" style="background-size:2em; padding-top: 0.5em;padding-bottom:0.5em">&uarr;</div></div>
+          <div style="display: table-cell; width: 1em; height: 2em;"><div id="darr" style="background-size:2em; padding-top: 0.5em;padding-bottom:0.5em">&darr;</div></div>
+          <div style="display: table-cell; width: 1em; height: 2em;"><div id="rarr" style="background-size:2em; padding-top: 0.5em;padding-bottom:0.5em">&rarr;</div></div>
+          <div style="display: table-cell; width: 1em; height: 2em;"><div id="larr" style="background-size:2em; padding-top: 0.5em;padding-bottom:0.5em">&larr;</div></div>
+        </div>
+    </div>
+    </div> 
+    <div id="canvas"></div>
+    <div id="camera"></div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
